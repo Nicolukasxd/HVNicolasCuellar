@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Nicolas</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>
+                Nicolas
+            </h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Educacion</a></li>
+                <li><a href="#work">Experiencia Laboral</a></li>
+            </ul>
+            <button id="btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="s-container">
+            <div class="content">
+                <span class="subtitle">
+                    Hola👋
+                </span>
+                <h1 class="title">
+                    Soy <span>Nicolas Cuellar, <br></span> Estudiante de UNIMINUTO
+                </h1>
+                <p class="description">
+                    Actualmente curso septimo semestre de ingeniería de
+                    sistemas, cuento con conocimientos de servicio técnico
+                    y desarrollo básico.
+                    Soy una persona que disfruta adquirir nuevos
+                    aprendizajes y conocimientos que aporten a mi vida
+                    profesional y cotidiana, así mismo me destaco por mi
+                    capacidad de rápido aprendizaje y resolución de
+                    problemas. 
+                    Me caracterizo como un colaborador responsable,
+                    puntual y con la mejor actitud de servicio con el fin de
+                    realizar a cabalidad las funciones que se me asignen.
+                </p>
+
+            </div>
+            <div class="image">
+                <img src="./photo.jpg" alt="photo">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="education" id="education">
+        <div class="s-container">
+            <div class="content">
+
+                <h1 class="title">
+                    <span>Educacion <i class='bx bxs-pencil'></i><br> 
+                    </span> 
+                </h1>
+                <p class="description">
+                    <h4>INGENIERIA DE SISTEMAS</h4>
+                    <h5>Corporación Universitaria Minuto De Dios</h5>
+                    <span>2021 - En curso <br></span>
+                    <i class='bx bxs-hand-down' ></i> Actualmente he completado satisfactoriamente 6 semestres de la carrera, con un promedio acumulativo de 4,3.
+
+                </p>
+                <p class="description">
+                    <h4>TÉCNICO EN CONTABILIZACIÓN DE OPERACIONES
+                        COMERCIALES Y FINANACIERAS</h4>
+                        <h5>Servicio Nacional De Aprendizaje (SENA)</h5>
+                    <span> Finalizacion: 2019 <br></span>
+                    <i class='bx bxs-hand-down' ></i> Adquirí conocimientos acerca de revisión del inventario el manejo del Kardex, identificación de documentos contables, manejo
+                    básico de cuentas PUC, manejo en el proceso de compra y venta
+                    de mercancías, liquidación de nómina.
+
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+    <br>
+    <br>
+    <section class="work" id="work">
+        <div class="s-container">
+            <div class="content">
+
+                <h1 class="title">
+                   <span>Experiencia Laboral<i class='bx bxs-briefcase' ></i><br></span> 
+                </h1>
+
+                <p class="description">
+                    <h4>PORTATILES SERVICIO</h4>
+                    <h5>Servicio técnico</h5>
+                    <span>Mayo 2022 - Noviembre 2022 <br></span>
+                    <i class='bx bxs-hand-down' ></i> Realice funciones como formateo de equipos,
+                    mantenimiento físico, instalación de programas y software, además, de funciones de atención y servicio al cliente.
+
+                </p>
+                <p class="description">
+                    <h4>Auxiliar deportivo de golf</h4>
+                        <h5>Club campestre los arrayanes</h5>
+                    <span> Septiembre 2023 - En curso <br></span>
+                    <i class='bx bxs-hand-down' ></i> Proporciono asistencia y apoyo al jugador durante su juego en el campo de golf, tales como llevar puntuacion, dar consejos acerca de las estrategias del campo entre otras.
+
+                </p>
+                <br>
+                <br>
+                <div class="buttons">
+                    <a href="#home">Volver</a>
+                   
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script>
+    const btn= document.getElementById("btn")
+    btn.addEventListener("click", () => {
+        document.querySelector("header ul").classList.toggle("show")
+    })
+</script>
+</html>
